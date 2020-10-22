@@ -18,8 +18,8 @@ model_bucket = 'wc2lambdacode'
 
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('test_ds')
-saved_pref = 's3://wc2ai-resized/'
-model_path = 's3://wc2lambdacode/converted_model.tflite'
+saved_pref = 's3://PutPhotoBuccket/'
+model_path = 's3://codeBucket/converted_model.tflite'
 model_key = 'converted_model.tflite'
 resized_path = '/tmp/resized.jpeg'
 
